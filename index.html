@@ -6,8 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="scripts/logic.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Eczar:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="box_left">
+            <div class="logo">
+                <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"/>
+                ODIN
+            </div>
+            <div class="background_ref">Photo by <a href="https://unsplash.com/es/@eugene_golovesov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eugene Golovesov</a> on <a href="https://unsplash.com/t/wallpapers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+        </div>
+        <div class="box_right">
+            <div class="formbox">
+                <div class="description">
+                    This is not a real service! You know you need something like this in your life to help you realize your deepest dreams.
+                    
+                    You know you want to.
+                </div>
+                <div class="form">
+                    Let's do this!
+                    <form action="index.html/" method="post" id="signup_form">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" name="first_name" id="first_name">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" name="last_name" id="last_name">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                        <label for="phone_number">PHONE NUMBER</label>
+                        <input type="tel" name="phone_number" id="phone_number">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm_password" id="confirm_password">
+                    </form>
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit" form="signup_form">Create Account</button>
+                <p>Already have an account? <a href="index.html">Log in</a></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
